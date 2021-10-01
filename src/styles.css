@@ -2,3 +2,11 @@
 html{
     scroll-behavior: smooth; /* faz com que as rolagens de tela sejam mais suaves */
 }
+
+.fs-54{
+    font-size: 54pt;
+}
+
+.fs-18{
+    font-size: 18pt;
+}
