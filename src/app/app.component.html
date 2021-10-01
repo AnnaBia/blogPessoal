@@ -1,3 +1,6 @@
-
-<router-outlet></router-outlet> <!--deixa as telas dinâmicas-->
+<!-- para deixar a barra menu e o rodapé disponiveis em todas as pág exceto na aba cadastrar ou entrar -->
+<app-menu *ngIf='auth.logado()'></app-menu>
+<!--deixa as telas dinâmicas-->
+<router-outlet></router-outlet>
+<app-rodape *ngIf='auth.logado()'></app-rodape>
 
