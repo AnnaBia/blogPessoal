@@ -18,7 +18,6 @@
                     <a class="btn btn-outline-light" href="#postagens">Ver Postagens</a>
                 </div>
             </div>
-
         </div>
         <!-- Imagem Tela Inicial -->
         <div class="col-md-6 d-flex justify-content-center">
@@ -27,6 +26,7 @@
 
     </div>
 </div>
+
 <!-- Nav -->
 <div class="container mb-5 mt-5" id="postagens">
     <nav>
@@ -63,12 +63,9 @@
     </div>
 </div>
 
-
-
-
 <!-- Modal -->
-<div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog"
-    aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+<div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -89,12 +86,14 @@
                     <textarea class="form-control" name="texto" id="texto" rows="3"></textarea>
                 </div>
 
-                <div class="form-group">                                        <!-- data-dismiss é quem fecha o modal -->
-                    <label for="texto">Escolha um tema ou <a routerLink='/tema' data-dismiss="modal">cadastre um novo</a>: </label>
-                   <select name="tema" id="tema" class="form-control">
-                    <option value="">Temas</option>
-                   </select>
-                   
+                <div class="form-group">
+                    <!-- data-dismiss é quem fecha o modal -->
+                    <label for="texto">Escolha um tema ou <a routerLink='/tema' data-dismiss="modal">cadastre um
+                            novo</a>: </label>
+                    <select name="tema" id="tema" class="form-control">
+                        <option value="">Temas</option>
+                    </select>
+
                 </div>
 
             </div>
