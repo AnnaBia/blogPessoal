@@ -12,7 +12,9 @@
       </li><!-- {{foto}} interpoação foto -->
 
       <li class="nav-item pl-3">
-        <p class="m-0 font-weight-bold text-white fs-16">Olá, {{nome}}</p><!-- {{nome}} interpoação foto -->
+        <a [routerLink]="['/user-edit', id]">
+          <p class="m-0 font-weight-bold text-white fs-16">Olá, {{nome}}</p><!-- {{nome}} interpoação foto -->
+        </a>
       </li>
 
       <li class="nav-item pl-3">
@@ -28,6 +30,6 @@
             aria-hidden="true"></i></a>
       </li>
     </ul>
-    
+
   </div>
 </nav>

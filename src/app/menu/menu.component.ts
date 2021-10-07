@@ -12,6 +12,7 @@ export class MenuComponent implements OnInit {
   // torna a nome e foto de perfil dinâmica
   nome = environment.nome
   foto = environment.foto
+  id=environment.id
 
   constructor(
     private router: Router
