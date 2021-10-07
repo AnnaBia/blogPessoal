@@ -32,6 +32,8 @@ export class InicioComponent implements OnInit {
   ) { }
 
   ngOnInit() { // inicia o componente início
+window.scroll(0,0)
+
     if (environment.token == '') {// se o token estiver vazio
       alert('Sua seção expirou, faça o login novamente!')
       this.router.navigate(['/entrar']) // envia para tela entrar
