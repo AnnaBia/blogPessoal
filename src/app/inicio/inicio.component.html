@@ -63,8 +63,8 @@
                 <div class="card text-center" *ngFor='let item of listaPostagens'>
                     <div class="card-body">
                         <h5 class="card-title m-0">{{item.titulo}}</h5>
-                        <small class="test-muted"> Tema: {{item.tema.descricao}}</small>
-                        <p class="card-text mb-3">{{item.texto}}</p>
+                        <small class="text-muted"> Tema: {{item.tema.descricao}}</small>
+                        <p class="card-text mt-3">{{item.texto}}</p>
                         <p class="card-text"><small class="text-muted">{{item.date | date: 'dd/MM/yyyy'}} às {{item.date
                                 | date: 'HH:mm'}}</small></p>
                         <p class="card-text"><small class="text-muted">by: {{item.usuario.nome}}</small></p>
@@ -80,10 +80,13 @@
                 <div class="card text-center" *ngFor='let item of user.postagem'>
                     <div class="card-body">
                         <h5 class="card-title m-0">{{item.titulo}}</h5>
-                        <small class="test-mutted"> Tema: {{item.tema.descricao}}</small>
+                        <small class="text-mutted"> Tema: {{item.tema.descricao}}</small>
                         <p class="card-text mt-3">{{item.texto}}</p>
                         <p class="card-text"><small class="text-muted">{{item.date | date: 'dd/MM/yyyy'}} às {{item.date
                                 | date: 'HH:mm'}}</small></p>
+
+                        <a [routerLink]="['/postagem-edit', item.id]" class="text-info mr-3" href="">Editar</a>
+                        <a [routerLink]="['/postagem-delete', item.id]" class="text-danger" href="">Apagar</a>
                     </div>
                 </div>
             </div>
@@ -97,7 +100,7 @@
                     <div class="card-body">
                         <h5 class="card-title m-0">{{item.titulo}}</h5>
 
-                        <p class="card-text mb-3">{{item.texto}}</p>
+                        <p class="card-text mt-3">{{item.texto}}</p>
                         <p class="card-text"><small class="text-muted">{{item.date | date: 'dd/MM/yyyy'}} às {{item.date
                                 | date: 'HH:mm'}}</small></p>
                         <p class="card-text"><small class="text-muted">by: {{item.usuario.nome}}</small></p>
